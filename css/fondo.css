@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root
+{
+ --azulclaro: #48D6ED;
+ --azuloscuro: #337AB7;
+ --azulnegro: #303342;
+ --negro: #333333;
+ --negro2: #000;
+ --gris: #B2B3B3;
+ --fondo: #FFFEFC;
+ --verdeazul: #157A8A;
+ --Magenta: #9C2759;
+ --blanco: #fff;
+ --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+ 
+*
+{
+ margin:0;
+}
+body
+{
+ font-family: 'Roboto', sans-serif;
+ font-size: 16px;
+}
+ 
+ h1,h2,h3,h4,h5
+ {
+ font-family: 'Marcellus', serif;
+ }
+
+ @media screen and (min-width: 320px) and (max-width:800px)
+ {
+    .logo
+    {
+        background-color: var(--negro2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .logo img
+    {
+        width: 40%;
+        max-width: 200px;   
+    }
+    .logo i
+    {
+        color: var(--blanco);
+        font-size: 2rem;
+    }
+    .menu
+    {
+        background-color: rgba(157, 167, 211, 0.735);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-hr
+    {
+        width: 90%;
+        background-color: var(--blanco);
+    }
+    .item
+    {
+    padding: 1rem;
+    }
+    nav a
+    {
+        color: var(--blanco);
+        text-decoration: none;
+        text-align: center;
+    }
+    nav a:hover
+    {
+        background-color: #FFFEFC;
+        width: 100%;
+    }
+    .navbar-button
+    {
+        background-color:transparent;
+        border: none;
+        border-radius: 3px;
+        font-size: 1em;
+        padding: 0.5rem;
+        font-family: 'Marcellus', serif;
+        color: var(--blanco);
+    }
+    #texto
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #calcular
+    {
+        margin-top: 10px;
+    }
+    .name
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+    .uno
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .dos
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }      
+    .tres
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .cuatro
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }  
+    .temperaturaing
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .calcular
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .formulario
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .formularioo2
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .formula
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #imagen
+    {
+        width: 80%;
+        height: 70%;
+        margin-top: 3%;
+        margin-left: 10%;
+    }
+    .titulo
+    {
+        margin-top: -25%;
+        margin-left: 30%;
+        position: absolute;
+    }
+    .nombrecen
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+    @media screen and (min-width:1024px) and (max-width:1800px)
+    {
+    .menu
+    {
+            background-color: rgba(139, 145, 175, 0.735);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    }
+    .menu-hr
+    {
+        width: 90%;
+        background-color: var(--blanco);
+    }
+    .item
+    {
+    padding: 1rem;
+    }
+    nav
+    {
+        display: flex;
+        flex-direction: row; 
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--verdeazul);
+        
+    }
+    nav a
+    {
+        color: var(--blanco);
+        text-decoration: none;
+        text-align: center;
+    }
+    .logo
+    {
+        padding: 1rem;
+    }
+    .logo img
+    {
+        width: 100%;
+        max-width: 180px;       
+    }
+    .logo i
+    {
+        display: none;
+    }
+    .menu
+    {
+        background-color: var(--verdeazul);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .menu-hr
+    { 
+        display: none;
+    }
+    .navbar-button
+    {
+        background-color:var(--azuloscuro);
+    }
+    #texto
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+    .name
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+    .uno
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .dos
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }      
+    .tres
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .cuatro
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }  
+    .temperaturaing
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formu
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .calcular
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .formulario
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .formularioo2
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .formula
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #imagen
+    {
+        width: 80%;
+        height: 70%;
+        margin-top: 3%;
+        margin-left: 13%;
+    }
+    .titulo
+    {
+        margin-top: -20%;
+        margin-left: 45%;
+        position: absolute;
+    }
+    .nombrecen
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4%;
+    }
+}
+
+/*------------FORMULARIO--------------*/
+* {
+	box-sizing: border-box;
+}
+
+body 
+{
+	font-family: 'Roboto', sans-serif;
+	background: #E5E5E5;
+}
+
+main 
+{
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+}
+
+.formulario 
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.formulario__label 
+{
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input 
+{
+	position: relative;
+}
+
+.formulario__input 
+{
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus 
+{
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error
+ {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo 
+{
+	display: block;
+}
+
+.formulario__validacion-estado
+ {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox 
+{
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar 
+{
+	grid-column: span 2;
+}
+
+.formulario__mensaje 
+{
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo 
+{
+	display: block;
+}
+
+.formulario__mensaje p 
+{
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar 
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn 
+{
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover 
+{
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito 
+{
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo 
+{
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado 
+
+{
+	color: #1ed12d;
+	opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__label 
+{
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado 
+{
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input 
+{
+	border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) 
+{
+	.formulario 
+	{
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar 
+	{
+		grid-column: 1;
+	}
+
+	.formulario__btn 
+	{
+		width: 100%;
+	}
+}
